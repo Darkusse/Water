@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="water.css">
+<link rel="stylesheet" href="cloud.css" media="all" />
+<script src="script.js" defer></script>
+<script>
+
+function cl_Div() {
+
+document.getElementById('main2').innerHTML = "Le nuage represente le # des mots clés qu'on utilise dans des scripts pour lancer la collect de donnée";
+
+} 
+function cl_2() {
+
+document.getElementById('tt').innerHTML =
+"les lettres qui tombent en forme de gouttelette représente des données collectées , chaque jour 2,5 quintilions d’octets.<br>103 400 000 spams sont envoyés.<br>15 200 000 textos sont envoyés.<br>3 600 000 recherches sur Google  ";
+inter();
+
+} 
+
+function cl_3() {
+
+document.getElementById('dd').innerHTML = "Ocean represente le stockage de tous les données recoltés <br> Selon les dernières estimations, le volume de données numériques sont de 64 zettaoctets ";
+} 
+</script>
+
+</head>
+<body>
+<div class="main1" id="main1"> 
+
+
+
+<div class="info" id="main2" ></div>
+
+    <div class="cloud fcloud01" id="cloud" onclick="cl_Div()"  ></div>
+	
+	<div class="cloud fcloud02" id="cloud" onclick="cl_Div()" ></div>
+	
+	
+</div>
+<div class="header">
+
+<!--Content before waves-->
+
+<div class="inner-header flex " id="rr" onclick="cl_2()">
+
+
+<div class="info1" id="tt" ></div>
+
+
+
+
+</div >
+
+<!--Vague -->
+
+<div class="main3" id="main3" onclick="cl_3()" >
+<div class="info1" id="dd"></div>
+
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(51,102,255)" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgb(51,153,255)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(51,204,255)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(0,153,255)" />
+</g>
+</svg>
+</div>
+<!--Vague fin-->
+
+
+
+
+</div>
+
+</body>
+</html>
